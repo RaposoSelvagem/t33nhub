@@ -1,53 +1,47 @@
-/* Garantir que o fundo da página inteira seja preto */
 html, body {
     background-color: #000000; /* Fundo preto */
-    color: #e0e0e0; /* Texto em cinza claro */
+    color: #e0e0e0;
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    height: 100%; /* Garantir que o fundo preencha toda a página */
+    height: 100%;
 }
 
-/* Estilo para os contêineres de 'tile' */
 .premium__tile {
-    background-color: #000000; /* Fundo preto para os blocos */
-    border: 2px solid #39FF14; /* Borda verde neon */
+    background-color: #000000;
+    border: 2px solid #39FF14;
     border-radius: 10px;
     padding: 20px;
     margin-bottom: 20px;
-    box-shadow: 0 0 20px #39FF14; /* Brilho neon ao redor dos blocos */
+    box-shadow: 0 0 20px #39FF14;
 }
 
-/* Estilo para os títulos */
 h1, h2 {
-    color: #39FF14; /* Verde neon para os títulos */
+    color: #39FF14;
     text-transform: uppercase;
     font-size: 2rem;
     margin-bottom: 20px;
 }
 
-/* Estilo para as descrições */
 .premium__desc {
-    color: #e0e0e0; /* Texto cinza claro */
-    background-color: rgba(0, 0, 0, 0.8); /* Fundo preto com transparência */
+    color: #e0e0e0;
+    background-color: rgba(0, 0, 0, 0.8);
     padding: 15px;
     border-radius: 8px;
-    border: 1px solid #39FF14; /* Borda verde neon nas descrições */
-    box-shadow: 0 0 15px #39FF14; /* Brilho neon nas descrições */
+    border: 1px solid #39FF14;
+    box-shadow: 0 0 15px #39FF14;
 }
 
-/* Estilo para os preços */
 .premium__price {
-    color: #39FF14; /* Texto em verde neon */
+    color: #39FF14;
     font-size: 1.5rem;
     font-weight: bold;
     margin-top: 10px;
 }
 
-/* Estilo para os botões */
 button, input[type="submit"] {
-    background-color: #39FF14; /* Fundo verde neon para os botões */
-    color: #000000; /* Texto preto */
+    background-color: #39FF14;
+    color: #000000;
     border: none;
     padding: 10px 20px;
     text-transform: uppercase;
@@ -55,27 +49,24 @@ button, input[type="submit"] {
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
-    box-shadow: 0 0 10px #39FF14; /* Brilho neon nos botões */
+    box-shadow: 0 0 10px #39FF14;
 }
 
 button:hover, input[type="submit"]:hover {
-    background-color: #006400; /* Verde escuro ao passar o mouse */
-    color: #ffffff; /* Texto branco ao passar o mouse */
-    box-shadow: 0 0 20px #39FF14; /* Aumenta o brilho ao passar o mouse */
+    background-color: #006400;
+    color: #ffffff;
+    box-shadow: 0 0 20px #39FF14;
 }
 
-/* Linha separadora */
 .section__hr {
-    border-top: 1px solid #39FF14; /* Linha verde neon */
+    border-top: 1px solid #39FF14;
     margin: 20px 0;
 }
 
-/* Estilo de contêiner geral */
 .container-fluid {
     padding: 20px;
 }
 
-/* Ajustes para dispositivos móveis */
 @media (max-width: 768px) {
     .premium__tile {
         margin-bottom: 30px;
