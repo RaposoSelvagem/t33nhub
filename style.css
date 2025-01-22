@@ -1,106 +1,67 @@
-/* CSS Reset */
-* {
+/* Estilo para o corpo da página */
+body {
+    background-color: #000000; /* Fundo preto */
+    color: #e0e0e0; /* Texto em cinza claro para contraste */
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: 'Arial', sans-serif;
-    background-color: #1a1a2e;
-    color: #fff;
     line-height: 1.6;
 }
 
-.main {
-    padding: 40px 0;
+/* Estilo para os títulos */
+h1, h2 {
+    color: #39FF14; /* Títulos em verde neon */
+    text-transform: uppercase;
+    text-align: center;
 }
 
-.premium {
-    padding: 20px;
-}
-
-.premium__tile {
-    background: linear-gradient(135deg, #0f3460 0%, #16213e 100%);
-    border-radius: 15px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-    padding: 20px;
-    transition: transform 0.3s, box-shadow 0.3s;
-    border: 1px solid #233554;
-    color: #e5e5e5;
-}
-
-.premium__tile:hover {
-    transform: scale(1.05);
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
-}
-
-.premium__name {
-    font-size: 1.8rem;
-    margin-bottom: 15px;
-    color: #00d9ff;
-    text-shadow: 0 0 10px rgba(0, 217, 255, 0.5);
-}
-
+/* Estilo para as descrições */
 .premium__desc {
-    font-size: 1rem;
-    margin-bottom: 20px;
-    line-height: 1.8;
+    color: #e0e0e0; /* Texto descritivo em cinza claro */
+    background-color: rgba(0, 0, 0, 0.8); /* Fundo preto com transparência */
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px #39FF14; /* Brilho neon verde */
 }
 
+/* Estilo para os preços */
 .premium__price {
+    color: #39FF14; /* Texto em verde neon para os preços */
     font-size: 1.2rem;
+    text-align: center;
     font-weight: bold;
-    margin-bottom: 20px;
-    color: #00ffa6;
 }
 
-.premium__status {
-    font-weight: bold;
-    color: #00ffa6;
-}
-
-.section__hr {
-    width: 100%;
-    height: 2px;
-    background-color: #233554;
-    margin: 10px 0;
-}
-
-input[type="submit"],
-input[type="image"] {
-    background-color: #00d9ff;
-    padding: 10px 20px;
+/* Estilo para os botões */
+button, input[type="submit"] {
+    background-color: #39FF14; /* Fundo neon para os botões */
+    color: #000000; /* Texto preto para contraste */
     border: none;
-    border-radius: 25px;
-    font-size: 1rem;
-    color: #fff;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
-    box-shadow: 0 5px 15px rgba(0, 217, 255, 0.4);
+    transition: 0.3s ease-in-out;
 }
 
-input[type="submit"]:hover,
-input[type="image"]:hover {
-    background-color: #00b3cc;
+button:hover, input[type="submit"]:hover {
+    background-color: #006400; /* Verde escuro ao passar o mouse */
+    color: #39FF14; /* Texto neon ao passar o mouse */
 }
 
-input[type="image"] {
-    border-radius: 25px;
+/* Estilo para os contêineres de 'tile' */
+.premium__tile {
+    border: 2px solid #39FF14; /* Borda neon verde */
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(57, 255, 20, 0.6); /* Brilho neon ao redor */
+    background-color: #000000; /* Fundo preto */
 }
 
-.premium__tile small {
-    font-size: 0.85rem;
-    color: #888;
-}
-
-.premium__price span {
-    display: inline-block;
-    margin: 5px 0;
-}
-
-@media (max-width: 768px) {
-    .premium__tile {
-        margin-bottom: 20px;
-    }
+/* Pequenos detalhes, como linhas separadoras */
+.section__hr {
+    border-top: 1px solid #39FF14; /* Linha separadora em verde neon */
+    margin: 15px 0;
 }
