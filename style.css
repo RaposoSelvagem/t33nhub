@@ -7,8 +7,8 @@
 
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #1a1a2e;
-    color: #fff;
+    background-color: #000000; /* Preto profundo */
+    color: #e5e5e5; /* Cinza claro para o texto */
     line-height: 1.6;
 }
 
@@ -21,25 +21,25 @@ body {
 }
 
 .premium__tile {
-    background: linear-gradient(135deg, #0f3460 0%, #16213e 100%);
+    background: linear-gradient(135deg, #001a00 0%, #003300 100%); /* Fundo preto com tons verdes */
     border-radius: 15px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 8px 16px rgba(0, 255, 0, 0.3); /* Sombra verde neon */
     padding: 20px;
     transition: transform 0.3s, box-shadow 0.3s;
-    border: 1px solid #233554;
+    border: 1px solid #39FF14; /* Borda verde neon */
     color: #e5e5e5;
 }
 
 .premium__tile:hover {
     transform: scale(1.05);
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 10px 25px rgba(0, 255, 0, 0.4); /* Efeito neon ao passar o mouse */
 }
 
 .premium__name {
     font-size: 1.8rem;
     margin-bottom: 15px;
-    color: #00d9ff;
-    text-shadow: 0 0 10px rgba(0, 217, 255, 0.5);
+    color: #39FF14; /* Verde neon para o título */
+    text-shadow: 0 0 10px rgba(57, 255, 20, 0.5); /* Sombra neon para o texto */
 }
 
 .premium__desc {
@@ -52,37 +52,37 @@ body {
     font-size: 1.2rem;
     font-weight: bold;
     margin-bottom: 20px;
-    color: #00ffa6;
+    color: #39FF14; /* Preço em verde neon */
 }
 
 .premium__status {
     font-weight: bold;
-    color: #00ffa6;
+    color: #39FF14; /* Status em verde neon */
 }
 
 .section__hr {
     width: 100%;
     height: 2px;
-    background-color: #233554;
+    background-color: #39FF14; /* Linha separadora em verde neon */
     margin: 10px 0;
 }
 
 input[type="submit"],
 input[type="image"] {
-    background-color: #00d9ff;
+    background-color: #39FF14; /* Fundo verde neon para botões */
     padding: 10px 20px;
     border: none;
     border-radius: 25px;
     font-size: 1rem;
-    color: #fff;
+    color: #000000; /* Texto preto */
     cursor: pointer;
     transition: background-color 0.3s ease;
-    box-shadow: 0 5px 15px rgba(0, 217, 255, 0.4);
+    box-shadow: 0 5px 15px rgba(57, 255, 20, 0.4); /* Sombra verde neon */
 }
 
 input[type="submit"]:hover,
 input[type="image"]:hover {
-    background-color: #00b3cc;
+    background-color: #006400; /* Verde escuro ao passar o mouse */
 }
 
 input[type="image"] {
@@ -91,7 +91,7 @@ input[type="image"] {
 
 .premium__tile small {
     font-size: 0.85rem;
-    color: #888;
+    color: #888; /* Texto menor em cinza */
 }
 
 .premium__price span {
