@@ -6,35 +6,58 @@ body {
     margin: 0;
     padding: 0;
     line-height: 1.6;
+    text-align: center; /* Centralizando o conteúdo */
+}
+
+/* Estilo global para links */
+a {
+    color: #39FF14; /* Links em verde neon */
+    text-decoration: none;
+}
+
+a:hover {
+    color: #ffffff; /* Links ficam brancos ao passar o mouse */
+}
+
+/* Estilo para os contêineres de 'tile' */
+.premium__tile {
+    background-color: #000000; /* Fundo preto para os blocos */
+    border: 2px solid #39FF14; /* Borda verde neon */
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 20px #39FF14; /* Brilho neon ao redor dos blocos */
 }
 
 /* Estilo para os títulos */
 h1, h2 {
     color: #39FF14; /* Verde neon para os títulos */
-    text-align: center;
     text-transform: uppercase;
+    font-size: 2rem;
+    margin-bottom: 20px;
 }
 
 /* Estilo para as descrições */
 .premium__desc {
-    color: #e0e0e0; /* Texto cinza claro para contraste */
-    background-color: #000000; /* Fundo preto para contraste */
-    padding: 10px;
+    color: #e0e0e0; /* Texto cinza claro */
+    background-color: rgba(0, 0, 0, 0.8); /* Fundo preto com transparência */
+    padding: 15px;
     border-radius: 8px;
-    border: 1px solid #39FF14; /* Borda verde neon */
+    border: 1px solid #39FF14; /* Borda verde neon nas descrições */
+    box-shadow: 0 0 15px #39FF14; /* Brilho neon nas descrições */
 }
 
 /* Estilo para os preços */
 .premium__price {
-    color: #39FF14; /* Texto verde neon */
+    color: #39FF14; /* Texto em verde neon */
     font-size: 1.5rem;
-    text-align: center;
     font-weight: bold;
+    margin-top: 10px;
 }
 
 /* Estilo para os botões */
 button, input[type="submit"] {
-    background-color: #39FF14; /* Fundo verde neon */
+    background-color: #39FF14; /* Fundo verde neon para os botões */
     color: #000000; /* Texto preto */
     border: none;
     padding: 10px 20px;
@@ -42,25 +65,30 @@ button, input[type="submit"] {
     font-weight: bold;
     border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 0 10px #39FF14; /* Brilho neon nos botões */
 }
 
 button:hover, input[type="submit"]:hover {
-    background-color: #006400; /* Muda para verde escuro ao passar o mouse */
+    background-color: #006400; /* Verde escuro ao passar o mouse */
     color: #ffffff; /* Texto branco ao passar o mouse */
-}
-
-/* Estilo para os contêineres */
-.premium__tile {
-    border: 2px solid #39FF14; /* Borda verde neon */
-    padding: 20px;
-    margin-bottom: 20px;
-    border-radius: 10px;
-    background-color: #000000; /* Fundo preto */
+    box-shadow: 0 0 20px #39FF14; /* Aumenta o brilho ao passar o mouse */
 }
 
 /* Linha separadora */
 .section__hr {
-    border-top: 1px solid #39FF14; /* Linha separadora verde neon */
-    margin: 15px 0;
+    border-top: 1px solid #39FF14; /* Linha verde neon */
+    margin: 20px 0;
+}
+
+/* Estilo de contêiner geral */
+.container-fluid {
+    padding: 20px;
+}
+
+/* Ajustes para dispositivos móveis */
+@media (max-width: 768px) {
+    .premium__tile {
+        margin-bottom: 30px;
+    }
 }
