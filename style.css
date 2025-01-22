@@ -27,7 +27,7 @@ body {
     padding: 20px;
     transition: transform 0.3s, box-shadow 0.3s;
     border: 1px solid #233554;
-    color: #e5e5e5;
+    color: #000000;
 }
 
 .premium__tile:hover {
