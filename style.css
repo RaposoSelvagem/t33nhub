@@ -1,74 +1,106 @@
-html, body {
-    background-color: #000000; /* Fundo preto */
-    color: #e0e0e0;
-    font-family: 'Arial', sans-serif;
+/* CSS Reset */
+* {
     margin: 0;
     padding: 0;
-    height: 100%;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #1a1a2e;
+    color: #fff;
+    line-height: 1.6;
+}
+
+.main {
+    padding: 40px 0;
+}
+
+.premium {
+    padding: 20px;
 }
 
 .premium__tile {
-    background-color: #000000;
-    border: 2px solid #39FF14;
-    border-radius: 10px;
+    background: linear-gradient(135deg, #0f3460 0%, #16213e 100%);
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
     padding: 20px;
-    margin-bottom: 20px;
-    box-shadow: 0 0 20px #39FF14;
+    transition: transform 0.3s, box-shadow 0.3s;
+    border: 1px solid #233554;
+    color: #e5e5e5;
 }
 
-h1, h2 {
-    color: #39FF14;
-    text-transform: uppercase;
-    font-size: 2rem;
-    margin-bottom: 20px;
+.premium__tile:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+}
+
+.premium__name {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: #00d9ff;
+    text-shadow: 0 0 10px rgba(0, 217, 255, 0.5);
 }
 
 .premium__desc {
-    color: #e0e0e0;
-    background-color: rgba(0, 0, 0, 0.8);
-    padding: 15px;
-    border-radius: 8px;
-    border: 1px solid #39FF14;
-    box-shadow: 0 0 15px #39FF14;
+    font-size: 1rem;
+    margin-bottom: 20px;
+    line-height: 1.8;
 }
 
 .premium__price {
-    color: #39FF14;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-weight: bold;
-    margin-top: 10px;
+    margin-bottom: 20px;
+    color: #00ffa6;
 }
 
-button, input[type="submit"] {
-    background-color: #39FF14;
-    color: #000000;
-    border: none;
-    padding: 10px 20px;
-    text-transform: uppercase;
+.premium__status {
     font-weight: bold;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease, box-shadow 0.3s ease;
-    box-shadow: 0 0 10px #39FF14;
-}
-
-button:hover, input[type="submit"]:hover {
-    background-color: #006400;
-    color: #ffffff;
-    box-shadow: 0 0 20px #39FF14;
+    color: #00ffa6;
 }
 
 .section__hr {
-    border-top: 1px solid #39FF14;
-    margin: 20px 0;
+    width: 100%;
+    height: 2px;
+    background-color: #233554;
+    margin: 10px 0;
 }
 
-.container-fluid {
-    padding: 20px;
+input[type="submit"],
+input[type="image"] {
+    background-color: #00d9ff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    font-size: 1rem;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 217, 255, 0.4);
+}
+
+input[type="submit"]:hover,
+input[type="image"]:hover {
+    background-color: #00b3cc;
+}
+
+input[type="image"] {
+    border-radius: 25px;
+}
+
+.premium__tile small {
+    font-size: 0.85rem;
+    color: #888;
+}
+
+.premium__price span {
+    display: inline-block;
+    margin: 5px 0;
 }
 
 @media (max-width: 768px) {
     .premium__tile {
-        margin-bottom: 30px;
+        margin-bottom: 20px;
     }
 }
