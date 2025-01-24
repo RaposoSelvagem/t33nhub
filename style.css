@@ -99,6 +99,10 @@ input[type="image"] {
     margin: 5px 0;
 }
 
+.fa-star {
+    color: gold; /* Cor alterada para dourado */
+}
+
 @media (max-width: 768px) {
     .premium__tile {
         margin-bottom: 20px;
