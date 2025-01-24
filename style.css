@@ -38,7 +38,7 @@ body {
 .premium__name {
     font-size: 1.8rem;
     margin-bottom: 15px;
-    color: #00d9ff;
+    color: #008CFF; /* Cor alterada para azul */
     text-shadow: 0 0 10px rgba(0, 217, 255, 0.5);
 }
 
@@ -100,7 +100,7 @@ input[type="image"] {
 }
 
 .fa-star {
-    color: gold; /* Cor alterada para dourado */
+    color: gold; /* Cor das estrelas alterada para dourado */
 }
 
 @media (max-width: 768px) {
