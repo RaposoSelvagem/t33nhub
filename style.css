@@ -38,7 +38,7 @@ body {
 .premium__name {
     font-size: 1.8rem;
     margin-bottom: 15px;
-    color: #008CFF; /* Cor alterada para azul */
+    color: #008CFF !important; /* Cor forçada para azul */
     text-shadow: 0 0 10px rgba(0, 217, 255, 0.5);
 }
 
