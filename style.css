@@ -7,14 +7,15 @@
 
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #0a0a0a;
-    color: #e5e5e5;
+    background-color: #0d1117;
+    color: #c9d1d9;
     line-height: 1.6;
+    padding: 20px;
 }
 
 .main {
     padding: 40px 0;
-    background-color: #0d1b2a;
+    background-color: #161b22;
 }
 
 .premium {
@@ -22,81 +23,78 @@ body {
 }
 
 .premium__tile {
-    background: linear-gradient(145deg, #16213e, #1b2a48);
+    background-color: #1f6feb;
     border-radius: 20px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
-    padding: 25px;
-    transition: transform 0.3s, box-shadow 0.3s;
-    border: 2px solid #294c75;
-    color: #e5e5e5;
+    padding: 30px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(31, 111, 235, 0.3);
     margin-bottom: 30px;
 }
 
 .premium__tile:hover {
-    transform: scale(1.05);
-    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.5);
+    transform: translateY(-10px);
+    box-shadow: 0 8px 24px rgba(31, 111, 235, 0.5);
 }
 
 .premium__name {
     font-size: 2rem;
     margin-bottom: 20px;
-    color: #00b4d8;
-    text-shadow: 0 0 12px rgba(0, 180, 255, 0.6);
-    font-weight: 600;
+    color: #58a6ff;
+    text-shadow: 0 0 10px rgba(88, 166, 255, 0.6);
+    font-weight: bold;
 }
 
 .premium__desc {
     font-size: 1.1rem;
-    margin-bottom: 25px;
+    margin-bottom: 20px;
     line-height: 1.8;
-    color: #c2d1e0;
+    color: #c9d1d9;
 }
 
 .premium__price {
     font-size: 1.4rem;
     font-weight: bold;
-    margin-bottom: 25px;
-    color: #00ffbb;
+    color: #3fb950;
+    margin-bottom: 20px;
 }
 
 .premium__status {
     font-weight: bold;
-    color: #00ffbb;
+    color: #3fb950;
 }
 
 .section__hr {
     width: 100%;
     height: 2px;
-    background-color: #16213e;
+    background-color: #0d1117;
     margin: 15px 0;
 }
 
 input[type="submit"],
 input[type="image"] {
-    background-color: #ffcc00;
-    padding: 12px 25px;
+    background-color: #238636;
+    padding: 12px 30px;
     border: none;
-    border-radius: 30px;
+    border-radius: 50px;
     font-size: 1rem;
-    color: #0d1b2a;
+    color: #ffffff;
     cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-    box-shadow: 0 6px 18px rgba(255, 204, 0, 0.4);
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 12px rgba(35, 134, 54, 0.3);
 }
 
 input[type="submit"]:hover,
 input[type="image"]:hover {
-    background-color: #00b4d8;
-    transform: translateY(-4px);
+    background-color: #2ea043;
 }
 
 input[type="image"] {
-    border-radius: 30px;
+    border-radius: 50px;
 }
 
 .premium__tile small {
     font-size: 0.9rem;
-    color: #a8b2c1;
+    color: #8b949e;
 }
 
 .premium__price span {
@@ -105,7 +103,7 @@ input[type="image"] {
 }
 
 .fa-star {
-    color: #ffd700; /* Dourado mais vibrante */
+    color: #ffd700; /* Estrelas douradas */
 }
 
 @media (max-width: 768px) {
