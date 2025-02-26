@@ -1,3 +1,4 @@
+
 /* CSS Reset */
 * {
     margin: 0;
@@ -7,15 +8,13 @@
 
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #21500d;
-    color: #3d85c6;
+    background-color: #000000;
+    color: #fff;
     line-height: 1.6;
-    padding: 20px;
 }
 
 .main {
     padding: 40px 0;
-    background-color: #161b22;
 }
 
 .premium {
@@ -23,91 +22,90 @@ body {
 }
 
 .premium__tile {
-    background-color: #1f6feb;
-    border-radius: 20px;
-    padding: 30px;
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 12px rgba(31, 111, 235, 0.3);
-    margin-bottom: 30px;
+    background: linear-gradient(135deg, #000000 0%, #16213e 100%);
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    border: 1px solid #233554;
+    color: #e5e5e5;
 }
 
 .premium__tile:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 8px 24px rgba(31, 111, 235, 0.5);
+    transform: scale(1.05);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
 }
 
 .premium__name {
-    font-size: 2rem;
-    margin-bottom: 20px;
-    color: #58a6ff;
-    text-shadow: 0 0 10px rgba(88, 166, 255, 0.6);
-    font-weight: bold;
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: #008CFF !important; /* Cor forçada para azul */
+    text-shadow: 0 0 10px rgba(0, 217, 255, 0.5);
 }
 
 .premium__desc {
-    font-size: 1.1rem;
+    font-size: 1rem;
     margin-bottom: 20px;
     line-height: 1.8;
-    color: #c9d1d9;
 }
 
 .premium__price {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     font-weight: bold;
-    color: #3fb950;
     margin-bottom: 20px;
+    color: #00ffa6;
 }
 
 .premium__status {
     font-weight: bold;
-    color: #3fb950;
+    color: #00ffa6;
 }
 
 .section__hr {
     width: 100%;
     height: 2px;
-    background-color: #0d1117;
-    margin: 15px 0;
+    background-color: #000000;
+    margin: 10px 0;
 }
 
 input[type="submit"],
 input[type="image"] {
-    background-color: #238636;
-    padding: 12px 30px;
+    background-color: #e8d41e;
+    padding: 10px 20px;
     border: none;
-    border-radius: 50px;
+    border-radius: 25px;
     font-size: 1rem;
-    color: #ffffff;
+    color: #fff;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    box-shadow: 0 4px 12px rgba(35, 134, 54, 0.3);
+    box-shadow: 0 5px 15px rgba(0, 217, 255, 0.4);
 }
 
 input[type="submit"]:hover,
 input[type="image"]:hover {
-    background-color: #2ea043;
+    background-color: #00b3cc;
 }
 
 input[type="image"] {
-    border-radius: 50px;
+    border-radius: 25px;
 }
 
 .premium__tile small {
-    font-size: 0.9rem;
-    color: #8b949e;
+    font-size: 0.85rem;
+    color: #888;
 }
 
 .premium__price span {
     display: inline-block;
-    margin: 6px 0;
+    margin: 5px 0;
 }
 
 .fa-star {
-    color: #ffd700; /* Estrelas douradas */
+    color: gold; /* Cor das estrelas alterada para dourado */
 }
 
 @media (max-width: 768px) {
     .premium__tile {
-        margin-bottom: 25px;
+        margin-bottom: 20px;
     }
 }
