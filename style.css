@@ -7,13 +7,14 @@
 
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #000000;
-    color: #fff;
+    background-color: #0a0a0a;
+    color: #e5e5e5;
     line-height: 1.6;
 }
 
 .main {
     padding: 40px 0;
+    background-color: #0d1b2a;
 }
 
 .premium {
@@ -21,90 +22,94 @@ body {
 }
 
 .premium__tile {
-    background: linear-gradient(135deg, #000000 0%, #16213e 100%);
-    border-radius: 15px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-    padding: 20px;
+    background: linear-gradient(145deg, #16213e, #1b2a48);
+    border-radius: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+    padding: 25px;
     transition: transform 0.3s, box-shadow 0.3s;
-    border: 1px solid #233554;
+    border: 2px solid #294c75;
     color: #e5e5e5;
+    margin-bottom: 30px;
 }
 
 .premium__tile:hover {
     transform: scale(1.05);
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.5);
 }
 
 .premium__name {
-    font-size: 1.8rem;
-    margin-bottom: 15px;
-    color: #008CFF !important; /* Cor forçada para azul */
-    text-shadow: 0 0 10px rgba(0, 217, 255, 0.5);
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #00b4d8;
+    text-shadow: 0 0 12px rgba(0, 180, 255, 0.6);
+    font-weight: 600;
 }
 
 .premium__desc {
-    font-size: 1rem;
-    margin-bottom: 20px;
+    font-size: 1.1rem;
+    margin-bottom: 25px;
     line-height: 1.8;
+    color: #c2d1e0;
 }
 
 .premium__price {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     font-weight: bold;
-    margin-bottom: 20px;
-    color: #00ffa6;
+    margin-bottom: 25px;
+    color: #00ffbb;
 }
 
 .premium__status {
     font-weight: bold;
-    color: #00ffa6;
+    color: #00ffbb;
 }
 
 .section__hr {
     width: 100%;
     height: 2px;
-    background-color: #000000;
-    margin: 10px 0;
+    background-color: #16213e;
+    margin: 15px 0;
 }
 
 input[type="submit"],
 input[type="image"] {
-    background-color: #e8d41e;
-    padding: 10px 20px;
+    background-color: #ffcc00;
+    padding: 12px 25px;
     border: none;
-    border-radius: 25px;
+    border-radius: 30px;
     font-size: 1rem;
-    color: #fff;
+    color: #0d1b2a;
     cursor: pointer;
-    transition: background-color 0.3s ease;
-    box-shadow: 0 5px 15px rgba(0, 217, 255, 0.4);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 6px 18px rgba(255, 204, 0, 0.4);
 }
 
 input[type="submit"]:hover,
 input[type="image"]:hover {
-    background-color: #00b3cc;
+    background-color: #00b4d8;
+    transform: translateY(-4px);
 }
 
 input[type="image"] {
-    border-radius: 25px;
+    border-radius: 30px;
 }
 
 .premium__tile small {
-    font-size: 0.85rem;
-    color: #888;
+    font-size: 0.9rem;
+    color: #a8b2c1;
 }
 
 .premium__price span {
     display: inline-block;
-    margin: 5px 0;
+    margin: 6px 0;
 }
 
 .fa-star {
-    color: gold; /* Cor das estrelas alterada para dourado */
+    color: #ffd700; /* Dourado mais vibrante */
 }
 
 @media (max-width: 768px) {
     .premium__tile {
-        margin-bottom: 20px;
+        margin-bottom: 25px;
     }
 }
